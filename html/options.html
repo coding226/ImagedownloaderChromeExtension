@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Image Downloader Options Page</title>
+    <script  language="JavaScript" type="text/javascript" src="/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <p style="text-align: center;"><strong>OPTIONS PAGE</strong></p>
+    <hr />
+    <div style="text-align:center">
+      <div class="familiarPageEditor">
+        Reddit: <input id="RedditName" type="text" size="50"/>    <input type="submit" class="submitButton" value="submit"></input>
+        <br>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="domainCaller" value="Domain"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="URLCaller" value="URL"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="titleCaller" value="Title"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="pageCodeCaller" value="Page Code"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="subredditCaller" value="SubReddit"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="userNameCaller" value="User Name"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="dateCaller" value="Date"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="timeCaller" value="Time"></input>
+      <br>
+      <input type="checkbox" class="folderNamer" id="subRedditFolder">Append subreddit Folder?</input>
+      </div>
+      <br>
+      <div class="familiarPageEditor">
+        Twitter: <input id="TwitterName" type="text" size="50"/>    <input type="submit" class="submitButton" value="submit"></input>
+        <br>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="domainCaller" value="Domain"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="URLCaller" value="URL"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="titleCaller" value="Title"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="pageCodeCaller" value="Page Code"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="userNameCaller" value="User Name"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="userCodeCaller" value="User Code"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="dateCaller" value="Date"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="timeCaller" value="Time"></input>
+      <br>
+      <input type="checkbox" class="folderNamer" id="twitterUserFolder">Append Username Folder?</input>
+      </div>
+      <br>
+      <div class="familiarPageEditor">
+        DeviantArt: <input id="DeviantArtName" type="text" size="50"/>    <input type="submit" class="submitButton" value="submit"></input>
+        <br>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="domainCaller" value="Domain"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="URLCaller" value="URL"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="titleCaller" value="Title"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="pageCodeCaller" value="Page Code"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="userNameCaller" value="User Name"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="dateCaller" value="Date"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="timeCaller" value="Time"></input>
+      <br>
+      <input type="checkbox" class="folderNamer" id="dAUserFolder">Append Username Folder?</input>
+      </div>
+      <br>
+      <div class="familiarPageEditor">
+        Furaffinity: <input id="furaffinityName" type="text" size="50"/>    <input type="submit" class="submitButton" value="submit"></input>
+        <br>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="domainCaller" value="Domain"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="URLCaller" value="URL"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="titleCaller" value="Title"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="pageCodeCaller" value="Page Code"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="userNameCaller" value="User Name"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="dateCaller" value="Date"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="timeCaller" value="Time"></input>
+      <br>
+      <input type="checkbox" class="folderNamer" id="furUserFolder">Append Username Folder?</input>
+      </div>
+      <br>
+      <div class="familiarPageEditor">
+        Tumblr: <input id="TumblrName" type="text" size="50"/>    <input type="submit" class="submitButton" value="submit"></input>
+        <br>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="domainCaller" value="Domain"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="URLCaller" value="URL"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="titleCaller" value="Title"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="pageCodeCaller" value="Page Code"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="userNameCaller" value="User Name"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="ogUserCaller" value="Original User"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="ogCodeCaller" value="Original Code"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="ogUrlCaller" value="Original URL"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="dateCaller" value="Date"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="timeCaller" value="Time"></input>
+      <!---<input class="typeAdder"  style="background: none; border-color: #12d7ff" type="checkbox" id="imageNoChecker" value="Image No"></input>-->
+      <br>
+      <input type="checkbox" class="folderNamer" id="tumblrUserFolder">Append Username Folder?</input>
+      </div>
+      <br>
+      <div class="familiarPageEditor">
+        Instagram: <input id="InstagramName" type="text" size="50"/>    <input type="submit" class="submitButton" value="submit"></input>
+        <br>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="domainCaller" value="Domain"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="URLCaller" value="URL"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="titleCaller" value="Title"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="pageCodeCaller" value="Page Code"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="userNameCaller" value="User Name"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="dateCaller" value="Date"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="timeCaller" value="Time"></input>
+      <br>
+      <input type="checkbox" class="folderNamer" id="instaUserFolder">Append Username Folder?</input>
+      </div>
+      <br>
+      <div class="familiarPageEditor">
+        Hentai Foundry: <input id="HFName" type="text" size="50"/>    <input type="submit" class="submitButton" value="submit"></input>
+        <br>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="domainCaller" value="Domain"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="URLCaller" value="URL"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="titleCaller" value="Title"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="pageCodeCaller" value="Page Code"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="userNameCaller" value="User Name"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="dateCaller" value="Date"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="timeCaller" value="Time"></input>
+      <br>
+      <input type="checkbox" class="folderNamer" id="hFUserFolder">Append Username Folder?</input>
+      </div>
+      <br>
+      <div class="familiarPageEditor">
+        NewGrounds: <input id="newGroundsName" type="text" size="50"/>    <input type="submit" class="submitButton" value="submit"></input>
+        <br>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="domainCaller" value="Domain"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="URLCaller" value="URL"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="titleCaller" value="Title"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="userNameCaller" value="User Name"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="dateCaller" value="Date"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="timeCaller" value="Time"></input>
+      <br>
+      <input type="checkbox" class="folderNamer" id="nGUserFolder">Append Username Folder?</input>
+      </div>
+      <br>
+      <div class="familiarPageEditor">
+        Imgur: <input id="imgurName" type="text" size="50"/>    <input type="submit" class="submitButton" value="submit"></input>
+        <br>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="domainCaller" value="Domain"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="URLCaller" value="URL"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="titleCaller" value="Title"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="pageCodeCaller" value="Page Code"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="userNameCaller" value="User Name"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="dateCaller" value="Date"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="timeCaller" value="Time"></input>
+      <br>
+      <input type="checkbox" class="folderNamer" id="nGUserFolder">Append Username Folder?</input>
+      </div>
+      <br>
+      <div class="familiarPageEditor">
+        XiaoHongshu: <input id="XiaoHongShuName" type="text" size="50"/>    <input type="submit" class="submitButton" value="submit"></input>
+        <br>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="domainCaller" value="Domain"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="URLCaller" value="URL"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="titleCaller" value="Title"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="pageCodeCaller" value="Page Code"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="userNameCaller" value="User Name"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="userCodeCaller" value="User Code"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="dateCaller" value="Date"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="timeCaller" value="Time"></input>
+      <br>
+      <input type="checkbox" class="folderNamer" id="xiaoHongShuUserFolder">Append Username Folder?</input>
+      </div>
+      <br>
+      <div class="familiarPageEditor">
+        General: <input id="GeneralName" type="text" size="50"/>    <input type="submit" class="submitButton" value="submit"></input>
+        <br>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="domainCaller" value="Domain"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit"  id="URLCaller" value="URL"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="titleCaller" value="Title"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="dateCaller" value="Date"></input>
+      <input class="typeAdder"  style="background: none; border-color: #12d7ff" type="submit" id="timeCaller" value="time"></input>
+      </div>
+      <br>
+      <div class="unsupportedSymbolEditor">
+        <p>Symbol Replacer:</p>
+        <strong>&lt;</strong>Replace with: <input id="GeqReplacement" type="text" size="5"/> <input type="submit"class="submitButton" value="submit">
+        <br>
+        <strong>&gt;</strong>
+        Replace with: <input id="LeqReplacement" type="text" size="5"/> <input type="submit"class="submitButton" value="submit">
+        <br>
+        <strong>:</strong>
+        Replace with: <input id="ColonReplacement" type="text" size="5"/> <input type="submit" class="submitButton" value="submit">
+        <br>
+        <strong>"</strong>
+        Replace with: <input id="DQuoateReplacement" type="text" size="5"/> <input type="submit" class="submitButton" value="submit">
+        <br>
+        <strong>/</strong>
+        Replace with: <input id="FSlashReplacement" type="text" size="5"/> <input type="submit" class="submitButton" value="submit">
+        <br>
+        <strong>\</strong>
+        Replace with: <input id="BSlashReplacement" type="text" size="5"/> <input type="submit" class="submitButton" value="submit">
+        <br>
+        <strong>|</strong>
+        Replace with: <input id="VBarReplacement" type="text" size="5"/> <input type="submit" class="submitButton" value="submit">
+        <br>
+        <strong>?</strong>
+        Replace with: <input id="QuestionReplacement" type="text" size="5"/> <input type="submit" class="submitButton" value="submit">
+        <br>
+        <strong>*</strong>
+        Replace with: <input id="AsteriskReplacement" type="text" size="5"/> <input type="submit" class="submitButton" value="submit">
+        <br>
+        <strong>~</strong>
+        Replace with: <input id="TildReplacement" type="text" size="5"/> <input type="submit" class="submitButton" value="submit">
+        <br>
+        <strong>.</strong>
+        Replace with: <input id="DotReplacement" type="text" size="5"/> <input type="submit" class="submitButton" value="submit">
+        <br>
+      </div>
+      <input type="checkbox" class="saveType" id="individualSave">SaveAs for every individual image download?
+      <input type="checkbox" class="saveType" id="batchSave">SaveAs for every batch image download?
+    </div>
+    <script language="JavaScript" type="text/javascript" src="/Scripts/options.js"></script>
+    </div>
+  </body>
+</html>

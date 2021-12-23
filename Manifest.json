@@ -1,0 +1,52 @@
+{
+    "manifest_version": 2,
+
+    "name": "Image Downloader",
+    "version": "0.7",
+    "description": "This is an extension to download images from Pixiv, Deviantart, and such with titles and file name",
+    "icons": {
+        "128": "128-new.png",
+        "48": "48-new.png",
+        "16": "16-new.png"
+    },
+
+    "browser_action": {
+        "default_icon": "128-new.png",
+        "default_popup": "html/popup.html"
+    },
+
+    "options_page": "html/options.html",
+    //chooses options
+
+    "permissions": [
+        "contextMenus",
+        "tabs",
+        "http://*/*",
+        "https://*/*",
+        "downloads",
+        "activeTab",
+        "storage",
+        "management"
+    ],
+    //premissions for google API
+
+    "background": {
+        "scripts": ["Scripts/eventPage.js","Scripts/background.js"]
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["jquery-3.5.1.min.js","Scripts/content_setup.js","Scripts/get_img_content.js","Scripts/batch_content.js"]
+      }
+    ],
+
+    //resources used when the extension is running
+    "web_accessible_resources": [
+      "128.png",
+      "download-graphic-128.png",
+      "download-graphic-128-2.png"
+    ],
+
+    "incognito": "split"
+}
